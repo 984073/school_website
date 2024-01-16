@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL-HUDA PUBLIC SCHOOL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <style>
+        @media (max-width:1150px) {
+            li.active a{
+                background-color: #00b2ff;
+                color:white ;
+                
+            }
+        }
+    </style>
+
+    <script>  
+        $(document).ready(function(){
+            $('#check').click(function(){
+                $('ul').toggleClass('show');
+               
+            })
+        })
+    </script>
+
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navdiv">
+           
+            <div class="logo" style="color: white;"> AL-HUDA PUBLIC SCHOOL</div>
+               <input type="checkbox" id="check">
+               <label for="check" class="checkbtn">
+                  <i class="fas fa-bars"></i>
+               </label>
+            
+            <ul>
+                <li class="active"><a href="home.html">Home</a></li>
+                <li class="active1"> <a href="adm.html">Admissions</a></li>
+                <li class="active2"> <a href="about.html">About us</a></li>
+                <li class="active3"> <a href="gale.html">Gallery</a></li>
+                <li class="active4"> <a href="ea.html">EA</a></li>
+                <li class="active5"> <a href="contact.html">Contact</a></li>
+            </ul>
+        
+        </div>
+              
+        
+    </nav>
+       <div class="container">
+        <div class="swiper">
+           
+            <div class="swiper-wrapper">
+              
+              <div class="swiper-slide"><img src="image/image1.jpg" id="image" alt=""></div>
+              <div class="swiper-slide"><img src="image/image2.jpg" id="image" alt=""></div>
+              <div class="swiper-slide"><img src="image/image3.jpg" id="image" alt=""></div>
+              ...
+            </div>
+           
+            <div class="swiper-pagination"></div>
+          
+        
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            
+    
+   </div> 
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script>
+    const swiper = new Swiper('.swiper', {
+         autoplay: {
+           delay: 3000,
+           disableOnInteraction: false, 
+         },
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        
+    
+      });
+ </script>
+ <script src=""></script>
+</body>
+</html>
